@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Chen - Backend Developer & Furry Illustrator. Crafting code and art with chaotic energy and unconventional style.">
+    <title>Alex Chen | Backend Dev & Illustrator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">alexchen</span>
+                <span class="logo-accent">/dev</span>
+            </div>
+            <nav class="nav">
+                <a href="#bio" class="nav-link">Bio</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#gallery" class="nav-link">Art</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="glitch">Backend Dev</span>
+                        <span class="accent-text"> + Furry Illustrator</span>
+                    </h1>
+                    <p class="hero-subtitle">Crafting chaotic but controlled systems and unconventional art. No corporate suits here.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Let's Work Together</button>
+                        <button class="btn btn-secondary" onclick="toggleBio()">Read Full Bio</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-element"></div>
+                    <div class="visual-element accent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="bio-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="bio-preview">
+                    <p class="bio-text">I'm a passionate backend developer obsessed with clean architecture and scalable systems. By day I build APIs and databases; by night I escape into digital illustration and the furry fandom where creativity has no limits.</p>
+                    <button class="btn btn-text" onclick="toggleBio()">See Full Story →</button>
+                </div>
+
+                <div id="bio-expanded" class="bio-expanded hidden">
+                    <div class="bio-content">
+                        <p class="bio-paragraph">My journey started with a fascination for how things work. I dove deep into backend technologies—Node.js, Python, databases, API design—because I wanted to understand the skeleton that powers web applications. The complexity, the elegance, the problem-solving: that's what hooks me.</p>
+                        
+                        <p class="bio-paragraph">But there's another side to me. I'm deeply embedded in the furry fandom as a digital artist. This isn't just a hobby; it's a creative outlet where I express myself without the constraints of conventional art world expectations. My illustrations blend character design, vibrant colors, and emotional storytelling. It's raw, it's genuine, and it's mine.</p>
+                        
+                        <p class="bio-paragraph">These two worlds collide beautifully. My dev work is meticulous and logical; my art is expressive and chaotic. Together, they define who I am: someone who values both precision and creativity, who refuses to fit into traditional boxes, and who believes that the best work comes from embracing your authentic self.</p>
+                        
+                        <p class="bio-paragraph">Beyond code and art, I'm into gaming (particularly narrative-driven games), modding communities, and building tools that empower creators. I thrive in environments where unconventional thinking is celebrated and where personality is welcome.</p>
+
+                        <button class="btn btn-text" onclick="toggleBio()">← Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-category">Backend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-category">API & Architecture</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">System Design</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Serverless</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-category">Digital Illustration</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Character Design</span>
+                            <span class="skill-tag">Clip Studio Paint</span>
+                            <span class="skill-tag">Procreate</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Animation</span>
+                            <span class="skill-tag">Concept Art</span>
+                            <span class="skill-tag">Furry Art</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-category">Other Tech</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">WebSockets</span>
+                            <span class="skill-tag">Testing</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Terminal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">HexChat API</h3>
+                            <p class="project-year">2024</p>
+                        </div>
+                        <p class="project-description">A real-time messaging backend built with Node.js and WebSockets, supporting millions of concurrent connections. Features end-to-end encryption, message persistence, and sophisticated user presence tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">WebSocket</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Redis</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-link">View Code →</a>
+                            <a href="#" class="btn btn-link">Live Demo →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">PixelVault</h3>
+                            <p class="project-year">2024</p>
+                        </div>
+                        <p class="project-description">A distributed asset storage service for creators, with blazing-fast CDN integration and smart caching. Built to handle terabytes of artist portfolios, commission galleries, and community art archives.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Go</span>
+                            <span class="tech-badge">S3</span>
+                            <span class="tech-badge">CloudFront</span>
+                            <span class="tech-badge">Microservices</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-link">View Code →</a>
+                            <a href="#" class="btn btn-link">Live Demo →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">FurryForge</h3>
+                            <p class="project-year">2023</p>
+                        </div>
+                        <p class="project-description">A community platform for furry artists to collaborate on projects. GraphQL API with complex authorization, real-time notifications, and sophisticated recommendation engine for connecting creators based on style and interests.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">GraphQL</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Machine Learning</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-link">View Code →</a>
+                            <a href="#" class="btn btn-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Art Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Digital Art & Illustrations</h2>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Character design - Wolf">
+                        <div class="gallery-overlay">
+                            <p class="gallery-title">Character Design: Echo</p>
+                            <p class="gallery-medium">Digital Illustration, 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Concept art">
+                        <div class="gallery-overlay">
+                            <p class="gallery-title">Concept Series</p>
+                            <p class="gallery-medium">Digital Concept Art, 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Portrait">
+                        <div class="gallery-overlay">
+                            <p class="gallery-title">Commission: Sage</p>
+                            <p class="gallery-medium">Character Commission, 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Animation frame">
+                        <div class="gallery-overlay">
+                            <p class="gallery-title">Animation Study</p>
+                            <p class="gallery-medium">Animation Keyframes, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-cta">
+                    <p>Want to see more of my artwork?</p>
+                    <a href="#" class="btn btn-primary">Visit Full Gallery →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Let's Create Something</h2>
+                <p class="contact-subtitle">Whether it's backend infrastructure or commissioning some art, I'm always up for collaborating with interesting people.</p>
+
+                <form id="contactForm" class="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="9866183c-2011-4297-abe2-301dc63d17be">
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="6" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+
+                <div id="successMessage" class="success-message hidden">
+                    <div class="success-content">
+                        <p class="success-title">Message Sent!</p>
+                        <p class="success-text">Thanks for reaching out. I'll get back to you soon with chaotic energy and thoughtful responses.</p>
+                        <button class="btn btn-text" onclick="resetForm()">Send Another →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Alex Chen</h4>
+                        <p class="footer-text">Backend developer & digital artist crafting unconventional solutions.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">GitHub</a></li>
+                            <li><a href="#" class="footer-link">Twitter</a></li>
+                            <li><a href="#" class="footer-link">Discord</a></li>
+                            <li><a href="#" class="footer-link">Art Portfolio</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">Socials</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Furaffinity</a></li>
+                            <li><a href="#" class="footer-link">Instagram</a></li>
+                            <li><a href="#" class="footer-link">Twitch</a></li>
+                            <li><a href="#" class="footer-link">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="footer-credit">Crafted with chaotic energy and unconventional passion. No corporate vibes here.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

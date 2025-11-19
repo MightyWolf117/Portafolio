@@ -167,7 +167,7 @@ function downloadCV() {
     // Crear un elemento <a> temporal para descargar el archivo
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'CV_Juan_Ruiz.pdf'; // Nombre del archivo al descargar
+    link.download = 'CV Juan Ruiz.pdf'; // Nombre del archivo al descargar
     link.target = '_blank';
     
     // Agregar al DOM, hacer clic y remover

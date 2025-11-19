@@ -162,7 +162,7 @@ document.querySelectorAll('.project-card, .skill-card').forEach(el => {
 // Download CV function
 function downloadCV() {
     // Ruta al archivo PDF del CV
-    const cvPath = "./cv/Formato hoja de vida institucional 2025-2.pdf";
+    const cvPath = "./files/Formato hoja de vida institucional 2025-2.pdf";
     
     // Crear un elemento <a> temporal para descargar el archivo
     const link = document.createElement('a');

@@ -153,6 +153,26 @@ main {
     width: 100%;
 }
 
+.btn-cv {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    margin-left: 0.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-sans);
+}
+
+.btn-cv:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
 /* ===========================
    Hero Section
    =========================== */
@@ -916,6 +936,13 @@ main {
     .nav {
         gap: 1.5rem;
         font-size: 0.9rem;
+        flex-wrap: wrap;
+    }
+
+    .btn-cv {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        margin-left: 0;
     }
 
     .hero-actions {
@@ -960,6 +987,15 @@ main {
     .nav {
         gap: 1rem;
         font-size: 0.85rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-cv {
+        width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
 
     .hero {

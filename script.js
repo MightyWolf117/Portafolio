@@ -159,5 +159,22 @@ document.querySelectorAll('.project-card, .skill-card').forEach(el => {
     observer.observe(el);
 });
 
+// Download CV function
+function downloadCV() {
+    // Ruta al archivo PDF del CV
+    const cvPath = "./cv/Formato hoja de vida institucional 2025-2.pdf";
+    
+    // Crear un elemento <a> temporal para descargar el archivo
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = 'CV_Juan_Ruiz.pdf'; // Nombre del archivo al descargar
+    link.target = '_blank';
+    
+    // Agregar al DOM, hacer clic y remover
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // Log initialization
 console.log('[v0] Portfolio loaded successfully');
